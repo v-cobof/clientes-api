@@ -1,0 +1,66 @@
+API
+
+Instalar o driver do mongo
+
+Fazer o Model apenas com as props
+
+Usando os repositories
+
+Data \ Repositories
+
+A interface é um contrato que pode ser usada por outras classes depois
+
+Ela vai LIMITAR o tipo de acesso que pode ser feito aos dados,
+pois as classes terão que implementar ela
+
+Data \ Configurations
+
+As configurations precisam ter uma intreface tbm
+
+Coloco no startup.cs as configs do mongodb em configure services
+
+Coloco as configs do mongo no appsettings
+
+
+--> alguns dos meus dados podem ser gerados pelo sistema
+então pode ser bom usar as DTOs / InputModel, que são objetos
+baseados no model, que só tem as props para uma operação 
+específica
+
+-> preciso lidar com o input model
+i.e., criar um model a partir dele
+
+
+
+
+
+
+
+
+
+Fullstack app com VUE e .NET
+
+Instalat o vue CLI
+
+vue --v
+
+vue create clientes_app // não pode usar maiúscula
+
+instalação no default
+
+
+O vue funciona por componentes também.
+Mas a etsrutura padrão dele parece um HTML, e não um JS retornando HTML
+E aí dentro de uma tag eu uso o JS
+
+Pra lidar com os dados na tabela eu uso o v-for
+Pra chamar da APi, eu uso o axios
+
+Dentro do export do meu componente vai ficar:
+- nome
+- props
+- data -> dados q serão usados no template
+- methods -> ações JS do meu componente, incluindo a chamada do axios
+- created -> aqui eu uso os meus métodos, pois serão chamados na criação do
+componente
+
