@@ -19,7 +19,6 @@ namespace backend.Controllers
             _clientesRepository = clientesRepository;
         }
 
-        
         [HttpGet]
         public IActionResult Get()
         {

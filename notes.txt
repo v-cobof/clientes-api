@@ -31,12 +31,20 @@ específica
 i.e., criar um model a partir dele
 
 
+Pra arrumar o problema de CORS, eu adicionei o codigo abaixo no Startup.cs
+-> o link ali deve ser a mesma rota que o meu frontend tiver,
+no caso o Vue pega aquela porta
+---------------------------------------------------------------
+services.AddCors(o => o.AddPolicy("CorsPolicy", builder => {
+                builder
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials()
+                .WithOrigins("http://localhost:8080");
+            }));
 
-
-
-
-
-
+app.UseCors("CorsPolicy");
+----------------------------------------------------------------
 
 Fullstack app com VUE e .NET
 

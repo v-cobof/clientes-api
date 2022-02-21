@@ -39,7 +39,7 @@ export default {
 
   methods: {
     lista: (scope) => {
-      axios.get(`rota get da API`).then((res) => {
+      axios.get(`http://localhost:24219/api/Clientes`).then((res) => {
         console.log(res);
         scope.clientes = res.data;
       });
