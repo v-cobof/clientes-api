@@ -6,6 +6,7 @@
       <input
         type="text"
         class="form-control"
+        v-model="cliente.nome"
         id="nome"
         name="nome"
         placeholder="Digite o nome"
@@ -17,6 +18,7 @@
       <input
         type="tel"
         class="form-control"
+        v-model="cliente.telefone"
         id="telefone"
         name="telefone"
         placeholder="Digite o telefone"
@@ -28,6 +30,7 @@
       <input
         type="text"
         class="form-control"
+        v-model="cliente.endereco"
         id="endereco"
         name="endereco"
         placeholder="Digite o endereço"
@@ -89,7 +92,7 @@ export default {
   data: () => {
     return {
       clientes: [],
-      cliente: undefined,
+      cliente: {nome: "", telefone: "", endereco: ""},
       mensagem: "",
     };
   },
@@ -102,18 +105,18 @@ export default {
     },
     salvar() {
       // se o objeto existir, chamo alterar e termino
-      if (this.cliente) {
+      if (this.cliente.id) {
         this.alterar();
         return;
       }
 
       axios
-        .post(`http://localhost:24219/api/Clientes`, {
+        .post(`http://localhost:24219/api/Clientes`, /*{
           nome: document.getElementById("nome").value,
           telefone: document.getElementById("telefone").value,
           endereco: document.getElementById("endereco").value,
-        })
-        .then(() => {
+        }*/
+        this.cliente).then(() => {
           this.lista();
           document.getElementById("nome").value = "";
           document.getElementById("telefone").value = "";
@@ -138,7 +141,7 @@ export default {
         )
         .then(() => {
           this.lista();
-          this.cliente = undefined;
+          this.cliente = {nome: "", telefone: "", endereco: ""},
           document.getElementById("nome").value = "";
           document.getElementById("telefone").value = "";
           document.getElementById("endereco").value = "";

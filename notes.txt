@@ -72,3 +72,8 @@ Dentro do export do meu componente vai ficar:
 - created -> aqui eu uso os meus métodos, pois serão chamados na criação do
 componente
 
+-> para manipular os dados nos forms, estava usando o JS vanilla (getElementById)
+mas tem uma forma melhor de fazer através do two way data binding, que é refletir
+os dados que eu digito em outro lugar, usando o v-model
+
+17min e 43 segundos do video
