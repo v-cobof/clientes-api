@@ -40,7 +40,7 @@ namespace backend
                 .AllowAnyMethod()
                 .AllowAnyHeader()
                 .AllowCredentials()
-                .WithOrigins("http://localhost:8080");
+                .WithOrigins("http://localhost:8080", "http://192.168.15.70:8080", "http://192.168.15.2:8080", "http://191.14.6.226", "http://191.19.6.226");
             }));
         }
 

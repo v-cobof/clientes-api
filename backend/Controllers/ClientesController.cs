@@ -1,6 +1,7 @@
 ﻿using backend.Data.Repositories;
 using backend.Models;
 using backend.Models.InputModels;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -19,6 +20,7 @@ namespace backend.Controllers
             _clientesRepository = clientesRepository;
         }
 
+        [EnableCors]
         [HttpGet]
         public IActionResult Get()
         {
