@@ -42,3 +42,47 @@ D:\A. Aulas_e_Projetos\Dev_Projects\ws-dotnet\AppClientes\backend\obj\Debug\net5
 D:\A. Aulas_e_Projetos\Dev_Projects\ws-dotnet\AppClientes\backend\obj\Debug\net5.0\ref\backend.dll
 D:\A. Aulas_e_Projetos\Dev_Projects\ws-dotnet\AppClientes\backend\obj\Debug\net5.0\backend.pdb
 D:\A. Aulas_e_Projetos\Dev_Projects\ws-dotnet\AppClientes\backend\obj\Debug\net5.0\backend.genruntimeconfig.cache
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\appsettings.json
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\backend.exe
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\backend.deps.json
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\backend.runtimeconfig.json
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\backend.runtimeconfig.dev.json
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\backend.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\backend.pdb
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\DnsClient.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\linux\native\libsnappy64.so
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\linux\native\libzstd.so
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\osx\native\libzstd.dylib
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.csproj.AssemblyReference.cache
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.AssemblyInfoInputs.cache
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.AssemblyInfo.cs
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.csproj.CoreCompileInputs.cache
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\scopedcss\bundle\backend.styles.css
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\staticwebassets\backend.StaticWebAssets.Manifest.cache
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.RazorTargetAssemblyInfo.cache
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.csproj.CopyComplete
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\refint\backend.dll
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.pdb
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\backend.genruntimeconfig.cache
+C:\Users\Global\Desktop\1.VictorCobo\c-sharp\appclientes\backend\obj\Debug\net5.0\ref\backend.dll
