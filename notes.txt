@@ -76,4 +76,8 @@ componente
 mas tem uma forma melhor de fazer através do two way data binding, que é refletir
 os dados que eu digito em outro lugar, usando o v-model
 
-17min e 43 segundos do video
+ROTAS
+
+npm install --save-dev vue-router
+
+Tem q instalar o router ainda e colocar algo nas outras 2 páginas

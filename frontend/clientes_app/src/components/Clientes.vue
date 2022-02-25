@@ -1,82 +1,107 @@
 <template>
-  <form>
-    <div class="form-group mb-3">
-      <label for="nome">Nome</label>
-      <input type="hidden" id="id" name="id" />
-      <input
-        type="text"
-        class="form-control"
-        v-model="cliente.nome"
-        id="nome"
-        name="nome"
-        placeholder="Digite o nome"
-      />
+  
+
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+      <div class="col-md-6 px-0">
+        <h1 class="display-4 fst-italic">
+          Bem vindo a minha aplicação com Vue!
+        </h1>
+        <p class="lead my-3">
+          Ela faz um CRUD em um banco de dados MongoDB através de uma API feita
+          em .NET 5.0
+        </p>
+        <p class="lead mb-0">
+          <a
+            href="https://github.com/v-cobof/clientes-app"
+            target="_blank"
+            class="text-white fw-bold"
+            >Ver repositório</a
+          >
+        </p>
+      </div>
     </div>
 
-    <div class="form-group mb-3">
-      <label for="telefone">Telefone</label>
-      <input
-        type="tel"
-        class="form-control"
-        v-model="cliente.telefone"
-        id="telefone"
-        name="telefone"
-        placeholder="Digite o telefone"
-      />
-    </div>
+    <hr />
 
-    <div class="form-group mb-3">
-      <label for="endereco">Endereço</label>
-      <input
-        type="text"
-        class="form-control"
-        v-model="cliente.endereco"
-        id="endereco"
-        name="endereco"
-        placeholder="Digite o endereço"
-      />
-    </div>
+    <form>
+      <div class="form-group mb-3">
+        <label for="nome">Nome</label>
+        <input type="hidden" id="id" name="id" />
+        <input
+          type="text"
+          class="form-control"
+          v-model="cliente.nome"
+          id="nome"
+          name="nome"
+          placeholder="Digite o nome"
+        />
+      </div>
 
-    <button v-on:click="salvar()" type="button" class="btn btn-primary mb-2">
-      Enviar
-    </button>
+      <div class="form-group mb-3">
+        <label for="telefone">Telefone</label>
+        <input
+          type="tel"
+          class="form-control"
+          v-model="cliente.telefone"
+          id="telefone"
+          name="telefone"
+          placeholder="Digite o telefone"
+        />
+      </div>
 
-    <div style="color: red">
-      {{ mensagem }}
-    </div>
-  </form>
+      <div class="form-group mb-3">
+        <label for="endereco">Endereço</label>
+        <input
+          type="text"
+          class="form-control"
+          v-model="cliente.endereco"
+          id="endereco"
+          name="endereco"
+          placeholder="Digite o endereço"
+        />
+      </div>
 
-  <br />
+      <button v-on:click="salvar()" type="button" class="btn btn-primary mb-2">
+        Enviar
+      </button>
 
-  <table class="table table-hover">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Nome</th>
-        <th>Telefone</th>
-        <th>Endereço</th>
-        <th colspan="2"></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="cliente in clientes" v-bind:key="cliente.id">
-        <td>{{ cliente.id }}</td>
-        <td>{{ cliente.nome }}</td>
-        <td>{{ cliente.telefone }}</td>
-        <td>{{ cliente.endereco }}</td>
-        <td>
-          <button class="btn btn-primary" v-on:click="editar(cliente)">
-            Editar
-          </button>
-        </td>
-        <td>
-          <button class="btn btn-danger" v-on:click="excluir(cliente.id)">
-            Excluir
-          </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+      <div style="color: red">
+        {{ mensagem }}
+      </div>
+    </form>
+
+    <br />
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>Endereço</th>
+          <th colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="cliente in clientes" v-bind:key="cliente.id">
+          <td>{{ cliente.id }}</td>
+          <td>{{ cliente.nome }}</td>
+          <td>{{ cliente.telefone }}</td>
+          <td>{{ cliente.endereco }}</td>
+          <td>
+            <button class="btn btn-primary" v-on:click="editar(cliente)">
+              Editar
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-danger" v-on:click="excluir(cliente.id)">
+              Excluir
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
 </template>
 
 <script>
@@ -92,31 +117,35 @@ export default {
   data: () => {
     return {
       clientes: [],
-      cliente: {nome: "", telefone: "", endereco: ""},
+      cliente: { nome: "", telefone: "", endereco: "" },
       mensagem: "",
     };
   },
 
   methods: {
     lista() {
+      this.cliente = { nome: "", telefone: "", endereco: "" };
       axios.get(`http://localhost:24219/api/Clientes`).then((res) => {
         escopoClientes.clientes = res.data;
       });
     },
     salvar() {
-      // se o objeto existir, chamo alterar e termino
       if (this.cliente.id) {
         this.alterar();
         return;
       }
 
       axios
-        .post(`http://localhost:24219/api/Clientes`, /*{
+        .post(
+          `http://localhost:24219/api/Clientes` /*{
+          removido por conta do v-model, e 'cliente' global
           nome: document.getElementById("nome").value,
           telefone: document.getElementById("telefone").value,
           endereco: document.getElementById("endereco").value,
-        }*/
-        this.cliente).then(() => {
+        }*/,
+          this.cliente
+        )
+        .then(() => {
           this.lista();
           document.getElementById("nome").value = "";
           document.getElementById("telefone").value = "";
@@ -124,15 +153,17 @@ export default {
         });
     },
     editar(cliente) {
+      /*removido por conta do v-model, e 'cliente' global
       document.getElementById("nome").value = cliente.nome;
       document.getElementById("telefone").value = cliente.telefone;
-      document.getElementById("endereco").value = cliente.endereco;
+      document.getElementById("endereco").value = cliente.endereco;*/
       this.cliente = cliente;
     },
     alterar() {
+      /*removido por conta do v-model, e 'cliente' global
       this.cliente.nome = document.getElementById("nome").value;
       this.cliente.telefone = document.getElementById("telefone").value;
-      this.cliente.endereco = document.getElementById("endereco").value;
+      this.cliente.endereco = document.getElementById("endereco").value;*/
 
       axios
         .put(
@@ -141,10 +172,10 @@ export default {
         )
         .then(() => {
           this.lista();
-          this.cliente = {nome: "", telefone: "", endereco: ""},
-          document.getElementById("nome").value = "";
+          this.cliente = { nome: "", telefone: "", endereco: "" };
+          /*document.getElementById("nome").value = "";
           document.getElementById("telefone").value = "";
-          document.getElementById("endereco").value = "";
+          document.getElementById("endereco").value = "";*/
         });
     },
 
