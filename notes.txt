@@ -81,3 +81,12 @@ ROTAS
 npm install --save-dev vue-router
 
 Tem q instalar o router ainda e colocar algo nas outras 2 páginas
+
+Tive problema com o Babel.
+Pra isso coloquei o seguinte no meu package.json
+
+"eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ]
