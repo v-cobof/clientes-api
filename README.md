@@ -30,7 +30,7 @@ Each one of theese is a different route for the API, that will perform a differe
 ![image](https://user-images.githubusercontent.com/85073588/157368684-3a2a5ce0-67f0-4d10-ae9a-b777342eb076.png)
 
 This is the model of the data that is being transfered to perform POST and PUT actions. It doesn't contain the Id because 
-this data will not be altered by the user, it's managed by the MongoDB database.
+this field will not be altered by the user, because it's managed by the MongoDB database.
 
 ![image](https://user-images.githubusercontent.com/85073588/157368725-b35ef84b-cd6b-4f94-8217-c6e1b6e6e3f3.png)
 
